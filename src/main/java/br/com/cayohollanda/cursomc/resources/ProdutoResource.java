@@ -11,9 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.cayohollanda.cursomc.domain.Categoria;
 import br.com.cayohollanda.cursomc.domain.Produto;
-import br.com.cayohollanda.cursomc.dto.CategoriaDTO;
 import br.com.cayohollanda.cursomc.dto.ProdutoDTO;
 import br.com.cayohollanda.cursomc.resources.utils.URL;
 import br.com.cayohollanda.cursomc.services.ProdutoService;
