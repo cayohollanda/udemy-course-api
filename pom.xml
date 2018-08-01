@@ -64,12 +64,20 @@
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
 		<!-- MySQL -->
-		
+
+		<!-- Spring Boot Mail -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-mail</artifactId>
 		</dependency>
+		<!-- Spring Boot Mail -->
 
+		<!-- Thymeleaf -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		<!-- Thymeleaf -->
 	</dependencies>
 
 	<build>
