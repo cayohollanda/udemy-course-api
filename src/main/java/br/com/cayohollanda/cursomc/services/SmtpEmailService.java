@@ -9,6 +9,8 @@ import org.springframework.mail.MailSender;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 
+import br.com.cayohollanda.cursomc.domain.Pedido;
+
 public class SmtpEmailService extends AbstractEmailService {
 
 	private static final Logger LOG = LoggerFactory.getLogger(SmtpEmailService.class);
@@ -31,6 +33,12 @@ public class SmtpEmailService extends AbstractEmailService {
 		LOG.info("Enviando de e-mail...");
 		this.javaMailSender.send(msg);
 		LOG.info("E-mail enviado");
+	}
+
+	@Override
+	public void sendOrderConfirmationHtmlEmail(Pedido obj) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
