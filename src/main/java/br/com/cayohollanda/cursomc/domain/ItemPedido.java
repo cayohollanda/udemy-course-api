@@ -1,6 +1,8 @@
 package br.com.cayohollanda.cursomc.domain;
 
 import java.io.Serializable;
+import java.text.NumberFormat;
+import java.util.Locale;
 
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
@@ -28,6 +30,23 @@ public class ItemPedido implements Serializable {
 		this.desconto = desconto;
 		this.quantidade = quantidade;
 		this.preco = preco;
+	}
+	
+	@Override
+	public String toString() {
+		// Converter numero double para reais
+		NumberFormat nf = NumberFormat.getCurrencyInstance(new Locale("pt", "BR"));
+		
+		StringBuilder builder = new StringBuilder();
+		builder.append(this.getProduto().getNome());
+		builder.append(", Qte: ");
+		builder.append(this.getQuantidade());
+		builder.append(", Preço unitário: ");
+		builder.append(nf.format(this.getPreco()));
+		builder.append(", Subtotal: ");
+		builder.append(nf.format(this.getSubTotal()));
+		builder.append("\n");
+		return builder.toString();
 	}
 	
 	public double getSubTotal() {
