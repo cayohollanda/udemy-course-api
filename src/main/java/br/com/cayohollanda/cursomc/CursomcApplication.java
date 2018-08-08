@@ -1,11 +1,8 @@
 package br.com.cayohollanda.cursomc;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import br.com.cayohollanda.cursomc.services.S3Service;
 
 // Implementando CommandLineRunner para instanciação ao rodar aplicação.
 
